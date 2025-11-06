@@ -1,0 +1,89 @@
+/* Card Style */
+.card1 {
+    background-color: var(--bg1-color);
+    display: flex;
+    flex-direction: row;
+    min-height: 420px;  /* ⬅️ Increased height */
+    border: none;
+    border-radius: 13px;
+    contain: content;
+    margin: 4em auto 36px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15),
+                2px 2px 7px rgba(0, 0, 0, 0.14),
+                3px 3px 8px rgba(0, 0, 0, 0.13),
+                4px 4px 9px rgba(0, 0, 0, 0.12);
+    z-index: 1;
+    max-width: 1200px;
+    width: 90%;
+    overflow: hidden;
+  }
+  
+  /* Hover Effect */
+  .card1:hover {
+    transform: scale(1.03);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Card Content */
+  .card1 img {
+    width: 35%;
+    height: 100%; /* ⬅️ Makes the image fill the taller card */
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .card1 .card-content {
+    padding: 2rem; /* ⬅️ Slightly increased padding for balance */
+    width: 65%;
+  }
+  
+  .card1 h3 {
+    font-size: 1.6rem;
+    margin: 0 0 0.8em;
+  }
+  
+  .card1 p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6; /* ⬅️ Makes text look better in taller layout */
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .card1 {
+      flex-direction: column;
+      width: 95%;
+      min-height: auto;
+    }
+  
+    .card1 img {
+      width: 100%;
+      height: 250px; /* Fixed image height for mobile */
+      border-radius: 10px 10px 0 0;
+    }
+  
+    .card1 .card-content {
+      width: 100%;
+      padding: 1.2rem;
+    }
+  }
+
+
+/* Academic Project Heading Style */
+.heading1 {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #222;
+  margin: 0.5em 0;
+  margin-top: 5rem;
+  color: var(--text);
+}
+
+.exp-head {
+  margin-bottom: 2rem;
+}
+
+.my_experience {
+  color: #bb86fc;
+}
